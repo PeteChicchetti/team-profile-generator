@@ -6,7 +6,8 @@ function generateSite(team) {
         let managerHtml = `
         <div class="card col">
                         <div class="card-header">
-                            ${manager.getName()}, ${manager.getRole()}
+                            ${manager.getName()} <br/>
+                            <i class="fa-solid fa-mug-hot"></i>${manager.getRole()}
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
@@ -25,7 +26,8 @@ function generateSite(team) {
         let engineerHtml = `
         <div class="card col">    
                         <div class="card-header">
-                            ${engineer.getName()}, ${engineer.getRole()}
+                            ${engineer.getName()} <br/> 
+                            <i class="fa-solid fa-glasses"></i>${engineer.getRole()}
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
@@ -44,7 +46,8 @@ function generateSite(team) {
         let internHtml = `
         <div class="card col">
                         <div class="card-header">
-                            ${intern.getName()}, ${intern.getRole()}
+                            ${intern.getName()} <br/>
+                            <i class="fa-solid fa-user-graduate"></i>${intern.getRole()}
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
@@ -84,6 +87,7 @@ module.exports = team => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile Generator</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="stylesheet" href="../dist/style.css">
     </head>
     <body>
