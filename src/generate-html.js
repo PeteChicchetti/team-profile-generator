@@ -1,6 +1,7 @@
-function generateSite(teamMembers) {
+function generateSite(team) {
     const html = [];
 
+    // function to generate manager html
     function generateManager(manager) {
         let managerHtml = `
         <div class="card col">
@@ -15,17 +16,67 @@ function generateSite(teamMembers) {
                             </ul>
                         </div>
                     </div>
-                `
+                `;
+                html.push(managerHtml);
     }
 
+    // function to generate engineer html
+    function generateEngineer(engineer) {
+        let engineerHtml = `
+        <div class="card col">    
+                        <div class="card-header">
+                            ${engineer.getName()}, ${engineer.getRole()}
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">ID: ${engineer.getId()}</li>
+                                <li class="list-group-item">Email: <span id='email'><a href='mailto:${engineer.getEmail()}'> ${engineer.getEmail()}</a></span></li>
+                                <li class="list-group-item">GitHub: <span id='email'><a target='_blank' href='https://github.com/${engineer.getGithub()}'> ${engineer.getGithub()}</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+                html.push(engineerHtml);
+    }
+
+    // function to generate intern html
+    function generateIntern(intern) {
+        let internHtml = `
+        <div class="card col">
+                        <div class="card-header">
+                            ${intern.getName()}, ${intern.getRole()}
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">ID: ${intern.getId()}</li>
+                                <li class="list-group-item">Email: <span id='email'><a href='mailto:${intern.getEmail()}'> ${intern.getEmail()}</a></span></li>
+                                <li class="list-group-item">School: ${intern.getSchool()}</li>
+                            </ul>
+                        </div>        
+                    </div>
+        `;
+        html.push(internHtml);
+    }
+
+    // Creating a loop for all empoyees
+    for (let i = 0; i < team.length; i++) {
+        if (team[i].getRole() === 'Manager') {
+            generateManager(team[i]);
+        }
+        if (team[i].getRole() === 'Engineer') {
+            generateEngineer(team[i]);
+        }
+        if (team[i].getRole() === 'Intern') {
+            generateIntern(team[i]);
+        }
+    }
+
+    // join the html sections together
+    return html.join('');
 }
 
-
-
-
-
-
-`<!DOCTYPE html>
+module.exports = team => {
+    return `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -92,3 +143,9 @@ function generateSite(teamMembers) {
         
     </body>
     </html>`
+}
+
+
+
+
+

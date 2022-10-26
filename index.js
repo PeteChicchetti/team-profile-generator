@@ -6,7 +6,6 @@ const Engineer = require('./lib/Engineer.classes');
 const Intern = require('./lib/Intern.classes');
 
 const generateSite = require('./src/generate-html');
-const { getConsoleOutput } = require('@jest/console');
 
 const teamMembers = [];
 
@@ -110,10 +109,8 @@ const internQuestions = [
 
 // Build team function
 function buildTeam() {
-    if (!fs.existsSync(dist)) {
-        fs.mkdirSync(dist)
-    }
-    fs.writeFileSync(outputPath, generateSite(teamMembers), 'utf-8');
+    const fileName = 'team';
+    fs.writeFileSync(`./dist${fileName}.html`, generateSite(teamMembers), 'utf-8');
 }
 
 // Intern function
