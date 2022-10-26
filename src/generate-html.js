@@ -11,7 +11,7 @@ function generateSite(team) {
                         <div class="card-body">
                             <ul class="list-group">
                                 <li class="list-group-item">ID: ${manager.getId()}</li>
-                                <li class="list-group-item">Email: <span id='email'><a href='mailto:${manger.getEmail()}'> ${manger.getEmail()}</a></span></li>
+                                <li class="list-group-item">Email: <span id='email'><a href='mailto:${manager.getEmail()}'> ${manager.getEmail()}</a></span></li>
                                 <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
                             </ul>
                         </div>
@@ -95,52 +95,13 @@ module.exports = team => {
     <!----- Team Cards -----> 
         <div class="d-flex justify-content-center"> 
                 <div class="row container-fluid">
-            <!----- Card 1 ----->         
-                    <div class="card col">
-                        <div class="card-header">
-                            ${manager.getName()}, ${manager.getRole()}
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${manager.getId()}</li>
-                                <li class="list-group-item">Email: ${manger.getEmail()}</li>
-                                <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
-                            </ul>
-                        </div>
-                    </div>
-            <!----- Card 2 ----->
-                    <div class="card col">    
-                        <div class="card-header">
-                            ${engineer.getName()}, ${engineer.getRole()}
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${engineer.getId()}</li>
-                                <li class="list-group-item">Email: ${engineer.getEmail()}</li>
-                                <li class="list-group-item">GitHub: ${engineer.getGithub()}</li>
-                            </ul>
-                        </div>
-                    </div>
-            <!----- Card 3 ----->
-                    <div class="card col">
-                        <div class="card-header">
-                            ${intern.getName()}, ${intern.getRole()}
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">ID: ${intern.getId()}</li>
-                                <li class="list-group-item">Email: ${intern.getEmail()}</li>
-                                <li class="list-group-item">School: ${intern.getSchool()}</li>
-                            </ul>
-                        </div>        
-                    </div>
+
+            ${generateSite(team)}
     
                 </div>
         </div>    
             
               
-    
-        
     </body>
     </html>`
 }

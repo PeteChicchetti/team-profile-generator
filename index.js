@@ -110,7 +110,7 @@ const internQuestions = [
 // Build team function
 function buildTeam() {
     const fileName = 'team';
-    fs.writeFileSync(`./dist${fileName}.html`, generateSite(teamMembers), 'utf-8');
+    fs.writeFileSync(`./dist/${fileName}.html`, generateSite(teamMembers), 'utf-8');
 }
 
 // Intern function
