@@ -1,6 +1,10 @@
 # Team Profile Generator
   
   This application used JavaScript and Node.Js to create a basic HTML page consisting of user input to generate an HTML page about a work team.
+
+  ## Video Link
+
+  https://drive.google.com/file/d/1bbBMvh7BH0eY29Pi8GmQZffHtZGNo4w0/view
           
   ## Description
 
