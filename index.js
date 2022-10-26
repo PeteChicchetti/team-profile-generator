@@ -5,7 +5,8 @@ const Manager = require('./lib/Manager.classes');
 const Engineer = require('./lib/Engineer.classes');
 const Intern = require('./lib/Intern.classes');
 
-const generateSite = require('./src/generate-html')
+const generateSite = require('./src/generate-html');
+const { getConsoleOutput } = require('@jest/console');
 
 const teamMembers = [];
 
@@ -107,12 +108,12 @@ const internQuestions = [
 ]
 
 
-// Write html file
-function writeToFile(fileName, data) {
-
-    fs.writeFile(`./${fileName}.md`, generateMarkdown(data) , (err) =>
-    err ? console.log(err) : console.log('Success!')
-    );
+// Build team function
+function buildTeam() {
+    if (!fs.existsSync(dist)) {
+        fs.mkdirSync(dist)
+    }
+    fs.writeFileSync(outputPath, generateSite(teamMembers), 'utf-8');
 }
 
 // Intern function

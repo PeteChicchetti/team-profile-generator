@@ -1,5 +1,31 @@
-function generateSite(data) {
-    return `<!DOCTYPE html>
+function generateSite(teamMembers) {
+    const html = [];
+
+    function generateManager(manager) {
+        let managerHtml = `
+        <div class="card col">
+                        <div class="card-header">
+                            ${manager.getName()}, ${manager.getRole()}
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">ID: ${manager.getId()}</li>
+                                <li class="list-group-item">Email: <span id='email'><a href='mailto:${manger.getEmail()}'> ${manger.getEmail()}</a></span></li>
+                                <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+    }
+
+}
+
+
+
+
+
+
+`<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -66,4 +92,3 @@ function generateSite(data) {
         
     </body>
     </html>`
-}
