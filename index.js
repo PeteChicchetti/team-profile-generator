@@ -5,6 +5,8 @@ const Manager = require('./lib/Manager.classes');
 const Engineer = require('./lib/Engineer.classes');
 const Intern = require('./lib/Intern.classes');
 
+const generateSite = require('./src/generate-html')
+
 const teamMembers = [];
 
 // Manager Questions
