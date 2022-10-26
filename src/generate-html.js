@@ -4,7 +4,7 @@ function generateSite(team) {
     // function to generate manager html
     function generateManager(manager) {
         let managerHtml = `
-        <div class="card col">
+        <div class="card col-9 col-lg-3">
                         <div class="card-header">
                             ${manager.getName()} <br/>
                             <i class="fa-solid fa-mug-hot"></i>${manager.getRole()}
@@ -24,7 +24,7 @@ function generateSite(team) {
     // function to generate engineer html
     function generateEngineer(engineer) {
         let engineerHtml = `
-        <div class="card col">    
+        <div class="card col-9 col-lg-3">    
                         <div class="card-header">
                             ${engineer.getName()} <br/> 
                             <i class="fa-solid fa-glasses"></i>${engineer.getRole()}
@@ -44,7 +44,7 @@ function generateSite(team) {
     // function to generate intern html
     function generateIntern(intern) {
         let internHtml = `
-        <div class="card col">
+        <div class="card col-9 col-lg-3">
                         <div class="card-header">
                             ${intern.getName()} <br/>
                             <i class="fa-solid fa-user-graduate"></i>${intern.getRole()}
