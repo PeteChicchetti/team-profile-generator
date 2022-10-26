@@ -25,7 +25,7 @@ describe('Employee', () => {
         });
     });
     describe('getRole', () => {
-        it('should return the value assigned to the given role', () => {
+        it('should return the role of employee', () => {
             const role = 'Employee';
             const newRole = new Employee().getRole();
             expect(role).toBe(newRole);
