@@ -2,6 +2,7 @@
     background-color: rgb(209, 47, 47);
     color: white;
     text-align: center;
+    padding: 25px 0px 25px 0px;
 }
 
 .card-header {
@@ -12,4 +13,14 @@
 
 i {
     padding-right: 4px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.507);
 }
