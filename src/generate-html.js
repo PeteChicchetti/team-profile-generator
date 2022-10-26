@@ -58,7 +58,7 @@ function generateSite(team) {
         html.push(internHtml);
     }
 
-    // Creating a loop for all empoyees
+    // Creating a loop for all employees
     for (let i = 0; i < team.length; i++) {
         if (team[i].getRole() === 'Manager') {
             generateManager(team[i]);
@@ -106,8 +106,3 @@ module.exports = team => {
     </body>
     </html>`
 }
-
-
-
-
-

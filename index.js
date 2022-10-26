@@ -16,25 +16,25 @@ const managerQuestions = [
         type: 'input',
         message: 'What is your managers name?',
         name: 'managerName',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        },  
        {
         type: 'input',
         message: 'What is the managers employee ID number?',
         name: 'managerId',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        }, 
        {
         type: 'input',
         message: 'What is the managers email?',
         name: 'managerEmail',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       }, 
       {
         type: 'input',
         message: 'What is the managers office number?',
         name: 'officeNumber',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       },
 
     ];
@@ -56,25 +56,25 @@ const engineerQuestions = [
         type: 'input',
         message: 'What is your engineers name?',
         name: 'engineerName',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        },  
        {
         type: 'input',
         message: 'What is the engineers employee ID number?',
         name: 'engineerId',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        }, 
        {
         type: 'input',
         message: 'What is the engineers employee email?',
         name: 'engineerEmail',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       }, 
       {
         type: 'input',
         message: 'What is the engineers github?',
         name: 'engineerGithub',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       },
 ]
 
@@ -84,25 +84,25 @@ const internQuestions = [
         type: 'input',
         message: 'What is your interns name?',
         name: 'internName',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        },  
        {
         type: 'input',
         message: 'What is the interns employee ID number?',
         name: 'internId',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
        }, 
        {
         type: 'input',
         message: 'What is the interns email?',
         name: 'internEmail',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       }, 
       {
         type: 'input',
         message: 'What is the interns school?',
         name: 'internSchool',
-        validate: (value) => {if(value){return true} else {return 'i need a value to contine'}}
+        validate: (value) => {if(value){return true} else {return 'i need a value to continue'}}
       },
 ]
 
