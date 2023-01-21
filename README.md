@@ -14,8 +14,6 @@
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
-  * [Contributions](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
           
@@ -26,15 +24,6 @@
   ## Usage
 
   This application quickly creates an html page pased off of user input to build a team profile of employees.
-          
-  ## License
-
-  N/A
-    
-          
-  ## Contributions
-
-  No guidelines
           
   ## Tests
 
